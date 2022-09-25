@@ -20,9 +20,15 @@ anglesUp.forEach((angleUp) => {
   angleUp.addEventListener("click", () => {
     const collapsible =
       angleUp.parentElement.parentElement.parentElement.nextElementSibling;
+    const border =
+      angleUp.parentElement.parentElement.parentElement.parentElement;
+
+    border.classList.add("border");
+
     collapsible.classList.add("none");
 
     angleUp.classList.add("none");
+
     angleUp.nextElementSibling.classList.add("show");
   });
 });
@@ -30,6 +36,10 @@ anglesDown.forEach((angleDown) => {
   angleDown.addEventListener("click", () => {
     const collapsible =
       angleDown.parentElement.parentElement.parentElement.nextElementSibling;
+    const border =
+      angleDown.parentElement.parentElement.parentElement.parentElement;
+    border.classList.remove("border");
+
     collapsible.classList.remove("none");
 
     angleDown.classList.remove("show");
