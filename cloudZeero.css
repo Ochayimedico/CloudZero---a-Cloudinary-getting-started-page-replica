@@ -131,7 +131,6 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* border: #1b1a1a 2px solid; */
 }
 .upload-and-transform,
 .term-and-url {
@@ -586,7 +585,7 @@ img.initials {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
+    align-items: stretch;
     white-space: normal;
     margin: 16px 0;
     gap: 1rem;
@@ -597,6 +596,9 @@ img.initials {
   .term,
   .url {
     margin: 0;
+  }
+  .transform-body {
+    justify-content: space-between;
   }
 
   img.cookbook-img {
